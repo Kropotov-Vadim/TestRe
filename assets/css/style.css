@@ -222,6 +222,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #2A2C36;
+  -webkit-transition: .3s;
+  transition: .3s;
   border-radius: 15px;
 }
 
@@ -238,8 +240,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .main__slider .slider-item.active {
@@ -256,7 +256,7 @@ body {
 
 .main__slider-btns {
   position: absolute;
-  top: 50%;
+  top: 63%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -278,7 +278,7 @@ body {
   border: none;
   position: absolute;
   top: -18px;
-  right: calc(230px / 2 + 34px);
+  right: calc(230px / 2 + 50px);
   z-index: 10;
 }
 

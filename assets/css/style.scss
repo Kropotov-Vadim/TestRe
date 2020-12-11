@@ -160,6 +160,7 @@ body {
       justify-content: center;
       align-items: center;
       background: #2A2C36;
+      transition: .3s;
       border-radius: 15px;
       // &.swiper-slide-active {
       //   height: 230px;
@@ -174,7 +175,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: .3s;
       &.active {
         height: 230px;
         width: 400px;
@@ -188,7 +188,7 @@ body {
     }
     &-btns {
       position: absolute;
-      top: 50%;
+      top: 63%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 20;
@@ -207,7 +207,7 @@ body {
       border: none;
       position: absolute;
       top: -18px; 
-      right: calc(230px / 2 + 34px);
+      right: calc(230px / 2 + 50px);
       z-index: 10;
     }
     &-next {

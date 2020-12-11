@@ -1,14 +1,3 @@
-// $('.main__slider').slick({
-//   centerMode: true,
-//   slidesToShow: 5,
-//   speed: 150,
-//   dote: false,
-//   variableWidth: true,
-//   draggable: false,
-//   prevArrow: $('.main__slider-prev'),
-//   nextArrow: $('.main__slider-next')
-// });
-
 let cSlide = false
 
 let mSlider = new Swiper('.main__wrap', {
@@ -34,7 +23,6 @@ let mSlider = new Swiper('.main__wrap', {
 
 
 mSlider.on('slideChange', ()=> {
-  mSlider.resize.resizeHandler()
   mSlider.slides[mSlider.activeIndex].classList.add('active')
   if(!cSlide) {
     cSlide = mSlider.slides[mSlider.activeIndex]
@@ -42,7 +30,10 @@ mSlider.on('slideChange', ()=> {
     cSlide.classList.remove('active')
     cSlide = mSlider.slides[mSlider.activeIndex]
   }
-  
+
+  setTimeout(()=> {
+    mSlider.resize.resizeHandler()
+  }, 90)
 })
 
 $('.course__select').on('click', () => {
