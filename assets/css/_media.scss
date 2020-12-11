@@ -142,10 +142,33 @@
       margin-top: 20px;
     }
   }
+  .offer {
+    &__block {
+      padding-top: 300px;
+      height: auto;
+      &-img {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+        bottom: auto;
+        top: -35px;
+      }
+    }
+  }
+  .faq {
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+  .social {
+    &__row {
+      margin-top: 40px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-  .course {
+  .course, .student, {
     &__title {
       text-align: center;
     }
@@ -156,6 +179,32 @@
   .about {
     text-align: center;
   }
+  .offer {
+    text-align: center;
+    &__block{
+      padding: 300px 30px 30px;
+      &-btn {
+        margin: 60px auto 0;
+      }
+    }
+  }
+  .faq {
+    &__title, &__descr {
+      text-align: center;
+    }
+    &__btn {
+      margin: 0 auto 40px;
+    }
+  }
+  .social {
+    text-align: center;
+    &__wrap {
+      justify-content: center;
+    }
+    &__descr {
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 575px) { 
@@ -165,7 +214,34 @@
   .course {
     padding-top: 40px;
   }
+  .student {
+    &__block {
+      max-width: 300px;
+      margin: 0 auto 40px;
+    }
+    &__img {
+      max-width: 387px;
+      width: 100%;
+    }
+  }
 }
+
+@media (max-width: 530px) {
+  .social {
+    &__mob {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__block {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
 
 @media (max-width: 500px) {
   .main {
@@ -189,7 +265,15 @@
         margin: 0 10px;
       }
     }
-
+  }
+  .offer {
+    &__block {
+      padding-top: 200px;
+      &-img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   }
 }
 
@@ -221,7 +305,7 @@
       margin-top: 40px;
     }
   }
-  .about, .course {
+  .about, .course, .faq, .social, .offer, .student {
     &__title {
       font-size: 30px;
     }
@@ -230,6 +314,32 @@
     }
     &__descr {
       font-size: 14px;
+    }
+  }
+  .social {
+    &__c {
+      .col-4 {
+        max-width: 100%;
+        flex: auto;
+        margin-bottom: 30px;
+      }
+    }
+    &__mob {
+      display: block;
+    }
+    &__block {
+      margin: 0 auto 35px;
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+  }
+  .student {
+    &__img {
+      margin: 0;
+      img {
+        margin: 0;
+      }
     }
   }
 }
