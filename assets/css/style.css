@@ -530,6 +530,18 @@ body {
   margin-bottom: 47px;
 }
 
+.student-cont {
+  min-height: 100%;
+}
+
+.student-scroll {
+  bottom: 0px !important;
+}
+
+.student-wrap .row {
+  margin: 0;
+}
+
 .student__img {
   width: 387px;
   margin: 16px auto 0;

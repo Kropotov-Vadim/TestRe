@@ -36,6 +36,20 @@ mSlider.on('slideChange', ()=> {
   }, 90)
 })
 
+
+let scrollSlider = new Swiper('.student-cont', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  width: 560,
+  autoplay: {
+    delay: 2000,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },
+})
+
 $('.course__select').on('click', () => {
   $('.course__select').toggleClass('active')
   $('.course__select-drop').slideToggle()

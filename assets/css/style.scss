@@ -409,6 +409,17 @@ body {
     line-height: 1.5em;
     margin-bottom: 47px;
   }
+  &-cont {
+    min-height: 100%;
+  }
+  &-scroll {
+    bottom: 0px !important;
+  }
+  &-wrap {
+    .row {
+      margin: 0;
+    }
+  }
   &__img {
     width: 387px;
     margin: 16px auto 0;
