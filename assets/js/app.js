@@ -38,9 +38,8 @@ mSlider.on('slideChange', ()=> {
 
 
 let scrollSlider = new Swiper('.student-cont', {
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   centeredSlides: true,
-  width: 560,
   autoplay: {
     delay: 2000,
   },
